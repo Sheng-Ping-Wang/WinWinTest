@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		4670B63C290F5EC900F9DBDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B63B290F5EC900F9DBDE /* AppDelegate.swift */; };
 		4670B63E290F5EC900F9DBDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B63D290F5EC900F9DBDE /* SceneDelegate.swift */; };
-		4670B640290F5EC900F9DBDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B63F290F5EC900F9DBDE /* ViewController.swift */; };
+		4670B640290F5EC900F9DBDE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B63F290F5EC900F9DBDE /* MainViewController.swift */; };
 		4670B643290F5EC900F9DBDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4670B641290F5EC900F9DBDE /* Main.storyboard */; };
 		4670B646290F5EC900F9DBDE /* WinWinTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4670B644290F5EC900F9DBDE /* WinWinTest.xcdatamodeld */; };
 		4670B648290F5ECB00F9DBDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4670B647290F5ECB00F9DBDE /* Assets.xcassets */; };
 		4670B64B290F5ECB00F9DBDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4670B649290F5ECB00F9DBDE /* LaunchScreen.storyboard */; };
+		4670B657290F602A00F9DBDE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B656290F602A00F9DBDE /* WebService.swift */; };
+		4670B659290F617800F9DBDE /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B658290F617800F9DBDE /* UserInfoModel.swift */; };
+		4670B65C290F648300F9DBDE /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B65B290F648300F9DBDE /* UserInfoTableViewCell.swift */; };
+		4670B65E290F664F00F9DBDE /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B65D290F664F00F9DBDE /* UserInfoViewModel.swift */; };
+		4670B661290F6C7C00F9DBDE /* UserTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670B660290F6C7C00F9DBDE /* UserTagCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4670B638290F5EC900F9DBDE /* WinWinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WinWinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4670B63B290F5EC900F9DBDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4670B63D290F5EC900F9DBDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4670B63F290F5EC900F9DBDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4670B63F290F5EC900F9DBDE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4670B642290F5EC900F9DBDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4670B645290F5EC900F9DBDE /* WinWinTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WinWinTest.xcdatamodel; sourceTree = "<group>"; };
 		4670B647290F5ECB00F9DBDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4670B64A290F5ECB00F9DBDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4670B64C290F5ECB00F9DBDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4670B656290F602A00F9DBDE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		4670B658290F617800F9DBDE /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		4670B65B290F648300F9DBDE /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		4670B65D290F664F00F9DBDE /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		4670B660290F6C7C00F9DBDE /* UserTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTagCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,12 @@
 		4670B63A290F5EC900F9DBDE /* WinWinTest */ = {
 			isa = PBXGroup;
 			children = (
+				4670B655290F5F2C00F9DBDE /* WebService */,
+				4670B652290F5F0700F9DBDE /* Model */,
+				4670B653290F5F1200F9DBDE /* View */,
+				4670B654290F5F1900F9DBDE /* ViewModel */,
 				4670B63B290F5EC900F9DBDE /* AppDelegate.swift */,
 				4670B63D290F5EC900F9DBDE /* SceneDelegate.swift */,
-				4670B63F290F5EC900F9DBDE /* ViewController.swift */,
 				4670B641290F5EC900F9DBDE /* Main.storyboard */,
 				4670B647290F5ECB00F9DBDE /* Assets.xcassets */,
 				4670B649290F5ECB00F9DBDE /* LaunchScreen.storyboard */,
@@ -68,6 +81,56 @@
 				4670B644290F5EC900F9DBDE /* WinWinTest.xcdatamodeld */,
 			);
 			path = WinWinTest;
+			sourceTree = "<group>";
+		};
+		4670B652290F5F0700F9DBDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4670B658290F617800F9DBDE /* UserInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4670B653290F5F1200F9DBDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4670B63F290F5EC900F9DBDE /* MainViewController.swift */,
+				4670B65F290F6C4F00F9DBDE /* CollectionViewCell */,
+				4670B65A290F645900F9DBDE /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4670B654290F5F1900F9DBDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4670B65D290F664F00F9DBDE /* UserInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4670B655290F5F2C00F9DBDE /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				4670B656290F602A00F9DBDE /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		4670B65A290F645900F9DBDE /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4670B65B290F648300F9DBDE /* UserInfoTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		4670B65F290F6C4F00F9DBDE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4670B660290F6C7C00F9DBDE /* UserTagCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4670B640290F5EC900F9DBDE /* ViewController.swift in Sources */,
+				4670B659290F617800F9DBDE /* UserInfoModel.swift in Sources */,
+				4670B65E290F664F00F9DBDE /* UserInfoViewModel.swift in Sources */,
+				4670B640290F5EC900F9DBDE /* MainViewController.swift in Sources */,
+				4670B65C290F648300F9DBDE /* UserInfoTableViewCell.swift in Sources */,
 				4670B63C290F5EC900F9DBDE /* AppDelegate.swift in Sources */,
 				4670B63E290F5EC900F9DBDE /* SceneDelegate.swift in Sources */,
+				4670B661290F6C7C00F9DBDE /* UserTagCollectionViewCell.swift in Sources */,
+				4670B657290F602A00F9DBDE /* WebService.swift in Sources */,
 				4670B646290F5EC900F9DBDE /* WinWinTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
